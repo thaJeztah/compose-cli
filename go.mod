@@ -27,7 +27,7 @@ require (
 	github.com/containerd/containerd v1.3.5 // indirect
 	github.com/docker/cli v0.0.0-20200528204125-dd360c7c0de8
 	github.com/docker/distribution v0.0.0-00010101000000-000000000000 // indirect
-	github.com/docker/docker v17.12.0-ce-rc1.0.20200309214505-aa6a9891b09c+incompatible
+	github.com/docker/docker v17.12.0-ce-rc1.0.20201009160326-9c15e82f19b0+incompatible
 	github.com/docker/docker-credential-helpers v0.6.3 // indirect
 	github.com/docker/go-connections v0.4.0
 	github.com/docker/go-units v0.4.0
@@ -43,11 +43,11 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.3.0 // indirect
+	github.com/moby/sys/mount v0.1.1 // indirect
 	github.com/moby/term v0.0.0-20200611042045-63b9a826fb74
 	github.com/morikuni/aec v1.0.0
 	github.com/onsi/gomega v1.10.1 // indirect
 	github.com/opencontainers/go-digest v1.0.0
-	github.com/opencontainers/runc v0.1.1 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/tsdb v0.7.1
 	github.com/sanathkr/go-yaml v0.0.0-20170819195128-ed9d249f429b
