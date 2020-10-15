@@ -153,7 +153,7 @@ func (ms *local) Run(ctx context.Context, r containers.ContainerConfig) error {
 		PortBindings: hostBindings,
 	}
 
-	created, err := ms.apiClient.ContainerCreate(ctx, containerConfig, hostConfig, nil, r.ID)
+	created, err := ms.apiClient.ContainerCreate(ctx, containerConfig, hostConfig, nil, nil, r.ID)
 
 	if err != nil {
 		if client.IsErrNotFound(err) {
@@ -173,7 +173,7 @@ func (ms *local) Run(ctx context.Context, r containers.ContainerConfig) error {
 			if err = io.Close(); err != nil {
 				return err
 			}
-			created, err = ms.apiClient.ContainerCreate(ctx, containerConfig, hostConfig, nil, r.ID)
+			created, err = ms.apiClient.ContainerCreate(ctx, containerConfig, hostConfig, nil, nil, r.ID)
 			if err != nil {
 				return err
 			}
